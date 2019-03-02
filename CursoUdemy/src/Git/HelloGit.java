@@ -10,6 +10,7 @@ public class HelloGit {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("1234");
+		System.out.println("1234");
 		int a = sc.nextInt();
 		int b = sc.nextInt();
 		int c = sc.nextInt();
