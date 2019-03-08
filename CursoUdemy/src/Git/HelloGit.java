@@ -1,32 +1,20 @@
 package Git;
 
-import java.util.Locale;
 import java.util.Scanner;
 
 public class HelloGit {
-
 	public static void main(String[] args) {
-		Locale.setDefault(Locale.US);
+
 		Scanner sc = new Scanner(System.in);
-		
-		System.out.println("1234");
-		System.out.println("1234");
-		int a = sc.nextInt();
-		int b = sc.nextInt();
-		int c = sc.nextInt();
-		if (a > b && a > c) {
-		System.out.println("Higher = " + a);
+		System.out.print("How many integer numbers are you going to enter: ");
+		int n = sc.nextInt();
+		int sum = 0;
+		for (int i = 1; i <= n; i++) {
+			System.out.print("Value #" + i + ": ");
+			int x = sc.nextInt();
+			sum += x;
 		}
-		else if (b > c) {
-		System.out.println("Higher = " + b);
-		}
-		else {
-		System.out.println("Higher = " + c);
-		}
+		System.out.println("Sum = " + sum);
 		sc.close();
-		}
-	
-		
-
 	}
-
+}
